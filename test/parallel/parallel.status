@@ -9,8 +9,10 @@ prefix parallel
 [$system==win32]
 
 [$system==linux]
+test-require-resolve:  PASS,FLAKY
 
 [$system==macos]
+test-v8-serdes:        PASS,FLAKY
 
 [$arch==arm || $arch==arm64]
 test-npm-install:      PASS,FLAKY
